@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <h1 style="font-size: 4em;">Stint Calculator</h1>
+    <h1 style="font-size: 4em; text-decoration: underline;">Stint Calculator</h1>
     <div id="form">
         <form method="">
             <label for="rtimehour">Time of the race :</label>
@@ -23,15 +23,21 @@
 
             <label for="timestop">Time between stops :</label>
             <input type="number" name="timestop" id="timestop" min="0" max="59" value="0">
-            <label for="timestop">minutes</label><br>
+            <label for="timestop">minutes</label>
+
+            <input type="number" name="stopminute" id="stopminute" min="0" max="59" value="0">
+            <label for="stopminute">seconds</label><br>
 
             <label for="numberstop">Number of stops :</label>
             <input type="number" name="numberstop" id="numberstop" min="0" value="0">
-
+            <span id="invalid"></span>
 
         </form>
     </div>
     <button id="submit">Start !</button>
+    <footer>
+        <p>Made by MrPotato90 &copy; 2025 - MrPotato90 </p>
+    </footer>
 </body>
 <script src="script.js"></script>
 

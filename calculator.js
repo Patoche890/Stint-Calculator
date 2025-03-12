@@ -3,11 +3,14 @@ const searchParams = new URLSearchParams(window.location.search);
 let rtimehour = Number(searchParams.get("rtimehour"));
 let rtimeminute = Number(searchParams.get("rtimeminute"));
 let timestop = Number(searchParams.get("timestop"));
-let numberstop = Number(searchParams.get("numberstop"));
-let stopleft = Number(searchParams.get(numberstop));
+let stopleft = Number(searchParams.get("numberstop"));
+let stopminute = Number(searchParams.get("stopminute"));
+let boxVisible = false; // Variable pour suivre l'état
 
 let secondes = 0;
 let interval;
+
+document.getElementById("stopleft").innerHTML = stopleft;
 
 const displayTime = () => {
   let heureString = rtimehour < 10 ? "0" + rtimehour : rtimehour;
@@ -38,23 +41,21 @@ interval = setInterval(countDown, 1000);
 displayTime();
 
 let intervalMinute;
-let secondesMinute = 0;
 
 const displayTimeMinute = () => {
   let minuteStringMinute = timestop < 10 ? "0" + timestop : timestop;
-  let secondeStringMinute =
-    secondesMinute < 10 ? "0" + secondesMinute : secondesMinute;
+  let secondeStringMinute = stopminute < 10 ? "0" + stopminute : stopminute;
   document.getElementById(
     "stoptimer"
   ).textContent = `${minuteStringMinute} min ${secondeStringMinute} s`;
 };
 
 const countDownMinute = () => {
-  if (secondesMinute > 0) {
-    secondesMinute--;
+  if (stopminute > 0) {
+    stopminute--;
   } else if (timestop > 0) {
     timestop--;
-    secondesMinute = 59;
+    stopminute = 59;
   } else {
     clearInterval(intervalMinute);
     return;
@@ -65,7 +66,17 @@ const countDownMinute = () => {
 intervalMinute = setInterval(countDownMinute, 1000);
 displayTimeMinute();
 
-document.getElementById("stopleft").innerHTML = stopleft;
-
-if (timestop == 0 && secondesMinute == 0) {
+if (timestop == 0 && stopminute == 0) {
+  let element = document.getElementById("box");
+  element.style.display = "flex";
+  boxVisible = true;
 }
+
+document.addEventListener("keydown", function (event) {
+  if (event.code === "Space" && boxVisible) {
+    event.preventDefault();
+    let element = document.getElementById("box");
+    element.style.display = "none";
+    boxVisible = false;
+  }
+});

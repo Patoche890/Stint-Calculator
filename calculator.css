@@ -6,28 +6,31 @@
 #box {
   height: 100%;
   width: 100%;
-  background-color: red;
   position: fixed;
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   animation-name: blink;
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-iteration-count: infinite;
-  display: none;
+  animation-timing-function: cubic-bezier(1, 0, 0, 1);
 }
 
-#box > span {
-  font-size: 1000%;
-  animation-name: blink;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
+#spaceesc {
+  font-size: 2em;
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 2em;
+}
+
+#namebox {
+  font-size: 12.5em;
 }
 
 body {
   margin: 0;
-  background: linear-gradient(130deg, #5f614e, #8b9d12, #77880d);
+  background: linear-gradient(150deg, #5f614e, #8b9d12, #c5e014);
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -36,7 +39,7 @@ body {
 
 * {
   font-family: AgencyFB, sans-serif;
-  color: black;
+  color: white;
 }
 
 #home {
@@ -94,17 +97,9 @@ h2 {
   width: 75%;
 }
 
-#stops {
-  margin: 10%;
-  font-size: 3em;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
+#stops,
 #timerstop {
-  margin: 10%;
+  margin: 5%;
   font-size: 3em;
   width: 100%;
   display: flex;
@@ -113,20 +108,13 @@ h2 {
 }
 
 @keyframes blink {
-  from {
-    #box > span {
-      color: yellow;
-    }
-    #box {
-      background-color: red;
-    }
+  0%,
+  100% {
+    background-color: red;
+    text-decoration: underline;
   }
-  to {
-    #box > span {
-      color: red;
-    }
-    #box {
-      background-color: yellow;
-    }
+  50% {
+    background-color: black;
+    text-decoration: none;
   }
 }

@@ -67,4 +67,16 @@ button:active {
   box-shadow: 1px 1px 0 white;
   color: black;
   border-color: white;
+  cursor: crosshair;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.19);
+  display: flex;
+  justify-content: end;
+  padding-right: 5%;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
