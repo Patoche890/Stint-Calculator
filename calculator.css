@@ -27,21 +27,34 @@
 
 body {
   margin: 0;
+  background: linear-gradient(130deg, #5f614e, #8b9d12, #77880d);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 * {
   font-family: AgencyFB, sans-serif;
+  color: black;
 }
 
 #home {
   width: 28px;
   padding: 6.7px;
   border-radius: 5px;
-  color: black;
-  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.1);
   position: absolute;
   margin: 10px;
-  border: 2px;
+  transition: all 0.2s ease;
+}
+
+#home:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+#home:active {
+  background-color: rgba(0, 0, 0, 0.26);
 }
 
 h2 {
@@ -60,7 +73,7 @@ h2 {
 
 #time {
   padding: 20px;
-  font-size: 7em;
+  font-size: 8em;
 }
 
 #divtime {
@@ -73,6 +86,30 @@ h2 {
   height: 80%;
   flex-direction: column;
   align-items: center;
+}
+
+#information {
+  display: flex;
+  align-items: center;
+  width: 75%;
+}
+
+#stops {
+  margin: 10%;
+  font-size: 3em;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#timerstop {
+  margin: 10%;
+  font-size: 3em;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 @keyframes blink {

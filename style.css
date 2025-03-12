@@ -3,20 +3,30 @@
   src: url(font/AGENCYB.TTF);
 }
 
+* {
+  color: white;
+}
+
 body {
   font-family: AgencyFB, "sans-serif";
   display: flex;
   align-items: center;
   flex-direction: column;
+  background: linear-gradient(130deg, #383838, #8e8e8e, #808080);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 #form {
-  margin-top: 6.5%;
+  margin-top: 5%;
   height: 50%;
-  font-size: 20px;
+  font-size: 1.7em;
   width: 40%;
   margin-bottom: 50px;
   font-style: italic;
+  margin-left: 6%;
 }
 
 input {
@@ -28,6 +38,7 @@ input {
   border-radius: 5px;
   border-color: black;
   box-shadow: 1px 1px 3px black;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 button {
@@ -39,14 +50,21 @@ button {
   border-radius: 5px;
   box-shadow: 3px 3px 0 black;
   transition: 0.2s ease;
+  background-color: rgba(0, 0, 0, 0.4);
+  cursor: crosshair;
 }
 
 button:hover {
-  background-color: rgba(0, 0, 0, 0.2);
-  box-shadow: 5px 5px 0 black;
+  font-size: 2em;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: black;
+  border-color: white;
+  box-shadow: 5px 5px 0 white;
 }
 
 button:active {
-  background-color: rgba(0, 0, 0, 0.29);
-  box-shadow: 1px 1px 0 black;
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 1px 1px 0 white;
+  color: black;
+  border-color: white;
 }

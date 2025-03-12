@@ -4,6 +4,8 @@ let rtimehour = Number(searchParams.get("rtimehour"));
 let rtimeminute = Number(searchParams.get("rtimeminute"));
 let timestop = Number(searchParams.get("timestop"));
 let numberstop = Number(searchParams.get("numberstop"));
+let stopleft = Number(searchParams.get(numberstop));
+
 let secondes = 0;
 let interval;
 
@@ -62,6 +64,8 @@ const countDownMinute = () => {
 
 intervalMinute = setInterval(countDownMinute, 1000);
 displayTimeMinute();
+
+document.getElementById("stopleft").innerHTML = stopleft;
 
 if (timestop == 0 && secondesMinute == 0) {
 }
