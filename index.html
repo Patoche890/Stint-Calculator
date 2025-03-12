@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stint Calculator :: Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link type="image/png" sizes="96x96" rel="icon" href="icon/icons8-racing-flag-96.png">
+</head>
+
+<body>
+    <h1 style="font-size: 40px;">Stint Calculator</h1>
+    <div id="form">
+        <form method="">
+            <label for="rtimehour">Time of the race :</label>
+            <input type="number" name="rtimehour" id="rtimehour" min="0" value="0">
+            <label for="rtimehour">hours</label>
+
+            <input type="number" name="rtimeminute" id="rtimeminute" min="0" max="59" value="0">
+            <label for="rtimeminute">minutes</label><br>
+
+            <label for="timestop">Time between stops :</label>
+            <input type="number" name="timestop" id="timestop" min="0" max="59" value="0">
+            <label for="timestop">minutes</label><br>
+
+            <label for="numberstop">Number of stops :</label>
+            <input type="number" name="numberstop" id="numberstop" min="0" value="0">
+
+
+        </form>
+    </div>
+    <button id="submit">Submit</button>
+</body>
+<script src="script.js"></script>
+
+</html>

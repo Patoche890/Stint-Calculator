@@ -1,0 +1,52 @@
+@font-face {
+  font-family: AgencyFB;
+  src: url(font/AGENCYB.TTF);
+}
+
+body {
+  font-family: AgencyFB, "sans-serif";
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#form {
+  margin-top: 6.5%;
+  height: 50%;
+  font-size: 20px;
+  width: 40%;
+  margin-bottom: 50px;
+  font-style: italic;
+}
+
+input {
+  margin: 5px;
+  width: 15%;
+  font-size: large;
+  font-family: AgencyFB, "sans-serif";
+  padding: 5px;
+  border-radius: 5px;
+  border-color: black;
+  box-shadow: 1px 1px 3px black;
+}
+
+button {
+  padding: 10px;
+  width: 20%;
+  font-family: AgencyFB, "sans-serif";
+  font-size: large;
+  border-width: 2px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 0 black;
+  transition: 0.2s ease;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 5px 0 black;
+}
+
+button:active {
+  background-color: rgba(0, 0, 0, 0.29);
+  box-shadow: 1px 1px 0 black;
+}
