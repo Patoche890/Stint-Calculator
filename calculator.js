@@ -7,10 +7,10 @@ let stopleft = Number(searchParams.get("numberstop"));
 let stopminute = Number(searchParams.get("stopminute"));
 let boxVisible = false; // Variable pour suivre l'état
 
+document.getElementById("stopleft").innerHTML = stopleft;
+
 let secondes = 0;
 let interval;
-
-document.getElementById("stopleft").innerHTML = stopleft;
 
 const displayTime = () => {
   let heureString = rtimehour < 10 ? "0" + rtimehour : rtimehour;
@@ -66,17 +66,59 @@ const countDownMinute = () => {
 intervalMinute = setInterval(countDownMinute, 1000);
 displayTimeMinute();
 
-if (timestop == 0 && stopminute == 0) {
-  let element = document.getElementById("box");
-  element.style.display = "flex";
-  boxVisible = true;
+// 2 Part
+
+function blinkstoptimer() {
+  let stoptimerelement = document.getElementById("stoptimer");
+  if (stoptimerelement) {
+    stoptimerelement.style.color = "red";
+    setTimeout(() => {
+      stoptimerelement.style.color = "white";
+    }, 500);
+    if (stopminute === 0) {
+      stoptimerelement.style.color = "white";
+    }
+  }
 }
 
+// Fonction qui vérifie les conditions en boucle
+function checkConditions() {
+  console.log("timestop:", timestop, "stopminute:", stopminute);
+
+  if (timestop === 0 && stopminute === 0) {
+    console.log("test");
+    let box = document.getElementById("box");
+    box.style.display = "flex";
+    boxVisible = true;
+  }
+
+  if (
+    rtimehour === 0 &&
+    rtimeminute === 0 &&
+    timestop === 0 &&
+    stopleft === 0 &&
+    stopminute === 0
+  ) {
+    clearInterval(loopInterval);
+    return;
+  }
+
+  if (timestop === 0 && stopminute === 5) {
+    setInterval(blinkstoptimer, 1200);
+  }
+}
+
+// Gestion de l'événement clavier
 document.addEventListener("keydown", function (event) {
   if (event.code === "Space" && boxVisible) {
     event.preventDefault();
-    let element = document.getElementById("box");
-    element.style.display = "none";
-    boxVisible = false;
+    let box = document.getElementById("box");
+    if (box) {
+      box.style.display = "none";
+      boxVisible = false;
+    }
   }
 });
+
+// Exécution de checkConditions toutes les 500 ms
+let loopInterval = setInterval(checkConditions, 500);
