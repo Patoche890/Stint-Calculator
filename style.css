@@ -19,6 +19,12 @@ body {
   background-size: cover;
 }
 
+h1 {
+  font-size: 4em;
+  text-decoration: underline;
+  text-shadow: 4px 4px 7.5px black;
+}
+
 #form {
   margin-top: 5%;
   height: 50%;
@@ -74,9 +80,18 @@ footer {
   background-color: rgba(0, 0, 0, 0.19);
   display: flex;
   justify-content: end;
-  padding-right: 5%;
+  padding-right: 2%;
   width: 100%;
   position: fixed;
   bottom: 0;
   width: 100%;
+}
+
+#warning {
+  width: 30px;
+}
+
+footer > p {
+  margin-left: 10px;
+  margin-right: 10px;
 }
