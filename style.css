@@ -47,7 +47,7 @@ input {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-button {
+#submit {
   padding: 10px;
   width: 20%;
   font-family: AgencyFB, "sans-serif";
@@ -60,7 +60,7 @@ button {
   cursor: crosshair;
 }
 
-button:hover {
+#submit:hover {
   font-size: 2em;
   background-color: rgba(255, 255, 255, 0.2);
   color: black;
@@ -68,7 +68,7 @@ button:hover {
   box-shadow: 5px 5px 0 white;
 }
 
-button:active {
+#submit:active {
   background-color: rgba(255, 255, 255, 0.3);
   box-shadow: 1px 1px 0 white;
   color: black;
@@ -87,11 +87,36 @@ footer {
   width: 100%;
 }
 
+#warning-link {
+  margin-top: 0.75%;
+}
+
 #warning {
-  width: 30px;
+  margin-top: 1.2%;
+  color: #ff7839;
+  transition: all 0.2s ease;
 }
 
 footer > p {
   margin-left: 10px;
   margin-right: 10px;
+}
+
+#svg-warning:hover > #warning {
+  animation: rgb-border 1.3s infinite;
+}
+
+@keyframes rgb-border {
+  0% {
+    color: rgb(255, 30, 30);
+  }
+  33% {
+    color: rgb(30, 129, 30);
+  }
+  66% {
+    color: rgb(30, 30, 255);
+  }
+  100% {
+    color: rgb(255, 30, 30);
+  }
 }

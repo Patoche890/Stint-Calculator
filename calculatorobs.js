@@ -1,109 +1,64 @@
-const _0x24a121 = _0x1b9f;
-function _0x2dd3() {
-  const _0x367bf0 = [
-    "red",
-    "Space",
-    "1462776LrKcQV",
-    "innerHTML",
-    "519924teUbmJ",
-    "10277751UKZjbl",
-    "27oKxCvi",
-    "stoptimer",
-    "textContent",
-    "getElementById",
-    "search",
-    "location",
-    "get",
-    "white",
-    "box",
-    "526610KNJArO",
-    "style",
-    "timestop",
-    "5IIxHiu",
-    "none",
-    "738797bgJSNL",
-    "1383196ELuqHh",
-    "\x20h\x20",
-    "848bDZQOA",
-    "flex",
-    "68887hrjGkP",
-    "color",
-    "3elSBni",
-    "log",
-    "display",
-    "\x20min\x20",
-    "rtimeminute",
-    "rtimehour",
-    "time",
-  ];
-  _0x2dd3 = function () {
-    return _0x367bf0;
-  };
-  return _0x2dd3();
-}
-(function (_0x512ba7, _0x252417) {
-  const _0x1d8df1 = _0x1b9f,
-    _0x2a1160 = _0x512ba7();
-  while (!![]) {
-    try {
-      const _0x291a63 =
-        parseInt(_0x1d8df1(0x159)) / 0x1 +
-        (parseInt(_0x1d8df1(0x16b)) / 0x2) *
-          (-parseInt(_0x1d8df1(0x160)) / 0x3) +
-        parseInt(_0x1d8df1(0x15a)) / 0x4 +
-        (parseInt(_0x1d8df1(0x157)) / 0x5) *
-          (-parseInt(_0x1d8df1(0x169)) / 0x6) +
-        (parseInt(_0x1d8df1(0x15e)) / 0x7) *
-          (parseInt(_0x1d8df1(0x15c)) / 0x8) +
-        (parseInt(_0x1d8df1(0x16d)) / 0x9) *
-          (-parseInt(_0x1d8df1(0x154)) / 0xa) +
-        -parseInt(_0x1d8df1(0x16c)) / 0xb;
-      if (_0x291a63 === _0x252417) break;
-      else _0x2a1160["push"](_0x2a1160["shift"]());
-    } catch (_0x161835) {
-      _0x2a1160["push"](_0x2a1160["shift"]());
-    }
-  }
-})(_0x2dd3, 0x81ccc);
-const searchParams = new URLSearchParams(
-  window[_0x24a121(0x172)][_0x24a121(0x171)]
-);
-let rtimehour = Number(searchParams[_0x24a121(0x173)](_0x24a121(0x165))),
-  rtimeminute = Number(searchParams[_0x24a121(0x173)](_0x24a121(0x164))),
-  timestop = Number(searchParams["get"](_0x24a121(0x156))),
-  stopminute = Number(searchParams["get"]("stopminute")),
-  stopleft = Number(searchParams[_0x24a121(0x173)]("numberstop"));
-function _0x1b9f(_0x32ad0d, _0x458021) {
-  const _0x2dd343 = _0x2dd3();
+function _0x2478(_0x145c53, _0x234f78) {
+  const _0x5e30a8 = _0x5e30();
   return (
-    (_0x1b9f = function (_0x1b9f2d, _0x2b0efe) {
-      _0x1b9f2d = _0x1b9f2d - 0x152;
-      let _0x3c1ca3 = _0x2dd343[_0x1b9f2d];
-      return _0x3c1ca3;
+    (_0x2478 = function (_0x247831, _0x368ed4) {
+      _0x247831 = _0x247831 - 0x7d;
+      let _0x310772 = _0x5e30a8[_0x247831];
+      return _0x310772;
     }),
-    _0x1b9f(_0x32ad0d, _0x458021)
+    _0x2478(_0x145c53, _0x234f78)
   );
 }
-const starttimestop = Number(searchParams[_0x24a121(0x173)](_0x24a121(0x156))),
-  startstopminute = Number(searchParams["get"]("stopminute"));
+const _0x4ee6be = _0x2478;
+(function (_0x2909b9, _0x110af3) {
+  const _0x2fbd43 = _0x2478,
+    _0x198a9a = _0x2909b9();
+  while (!![]) {
+    try {
+      const _0xbc5905 =
+        (parseInt(_0x2fbd43(0x82)) / 0x1) * (-parseInt(_0x2fbd43(0x87)) / 0x2) +
+        (parseInt(_0x2fbd43(0x97)) / 0x3) * (parseInt(_0x2fbd43(0x99)) / 0x4) +
+        -parseInt(_0x2fbd43(0x7e)) / 0x5 +
+        parseInt(_0x2fbd43(0x84)) / 0x6 +
+        (parseInt(_0x2fbd43(0x81)) / 0x7) * (-parseInt(_0x2fbd43(0x90)) / 0x8) +
+        (-parseInt(_0x2fbd43(0xa4)) / 0x9) * (parseInt(_0x2fbd43(0x92)) / 0xa) +
+        parseInt(_0x2fbd43(0x8e)) / 0xb;
+      if (_0xbc5905 === _0x110af3) break;
+      else _0x198a9a["push"](_0x198a9a["shift"]());
+    } catch (_0x2561a5) {
+      _0x198a9a["push"](_0x198a9a["shift"]());
+    }
+  }
+})(_0x5e30, 0x60afd);
+const searchParams = new URLSearchParams(
+  window[_0x4ee6be(0xa3)][_0x4ee6be(0x8a)]
+);
+let rtimehour = Number(searchParams[_0x4ee6be(0x93)](_0x4ee6be(0x89))),
+  rtimeminute = Number(searchParams["get"](_0x4ee6be(0x96))),
+  timestop = Number(searchParams[_0x4ee6be(0x93)](_0x4ee6be(0x9e))),
+  stopminute = Number(searchParams[_0x4ee6be(0x93)]("stopminute")),
+  stopleft = Number(searchParams[_0x4ee6be(0x93)](_0x4ee6be(0x7d)));
+const starttimestop = Number(searchParams[_0x4ee6be(0x93)](_0x4ee6be(0x9e))),
+  startstopminute = Number(searchParams[_0x4ee6be(0x93)](_0x4ee6be(0x95)));
 let boxVisible = ![],
   secondes = 0x0,
   interval;
-document[_0x24a121(0x170)]("stopleft")[_0x24a121(0x16a)] = stopleft;
+document[_0x4ee6be(0x94)](_0x4ee6be(0x85))[_0x4ee6be(0x7f)] = stopleft;
 const displayTime = () => {
-    const _0xfb743f = _0x24a121;
-    let _0x157c45 = rtimehour < 0xa ? "0" + rtimehour : rtimehour,
-      _0x27944d = rtimeminute < 0xa ? "0" + rtimeminute : rtimeminute,
-      _0x2387ce = secondes < 0xa ? "0" + secondes : secondes;
-    document[_0xfb743f(0x170)](_0xfb743f(0x166))[_0xfb743f(0x16f)] =
-      _0x157c45 +
-      _0xfb743f(0x15b) +
-      _0x27944d +
-      _0xfb743f(0x163) +
-      _0x2387ce +
+    const _0x558f26 = _0x4ee6be;
+    let _0x3430ed = rtimehour < 0xa ? "0" + rtimehour : rtimehour,
+      _0x390934 = rtimeminute < 0xa ? "0" + rtimeminute : rtimeminute,
+      _0x2e32df = secondes < 0xa ? "0" + secondes : secondes;
+    document["getElementById"](_0x558f26(0x91))[_0x558f26(0xa0)] =
+      _0x3430ed +
+      _0x558f26(0x9d) +
+      _0x390934 +
+      "\x20min\x20" +
+      _0x2e32df +
       "\x20s";
   },
   countDown = () => {
+    const _0x5391d9 = _0x4ee6be;
     if (secondes > 0x0) secondes--;
     else {
       if (rtimeminute > 0x0) rtimeminute--, (secondes = 0x3b);
@@ -112,6 +67,8 @@ const displayTime = () => {
           rtimehour--, (rtimeminute = 0x3b), (secondes = 0x3b);
         else {
           clearInterval(interval);
+          let _0x57e16e = document["getElementById"](_0x5391d9(0x9a));
+          _0x57e16e && (_0x57e16e["style"][_0x5391d9(0x98)] = _0x5391d9(0x8d));
           return;
         }
       }
@@ -121,11 +78,11 @@ const displayTime = () => {
 (interval = setInterval(countDown, 0x3e8)), displayTime();
 let intervalMinute, blinkInterval;
 const displayTimeMinute = () => {
-    const _0x4efbf2 = _0x24a121;
-    let _0x1a5d0d = timestop < 0xa ? "0" + timestop : timestop,
-      _0x3ce034 = stopminute < 0xa ? "0" + stopminute : stopminute;
-    document["getElementById"](_0x4efbf2(0x16e))[_0x4efbf2(0x16f)] =
-      _0x1a5d0d + _0x4efbf2(0x163) + _0x3ce034 + "\x20s";
+    const _0x5e43c1 = _0x4ee6be;
+    let _0x1f80ac = timestop < 0xa ? "0" + timestop : timestop,
+      _0xd37925 = stopminute < 0xa ? "0" + stopminute : stopminute;
+    document[_0x5e43c1(0x94)](_0x5e43c1(0x8f))[_0x5e43c1(0xa0)] =
+      _0x1f80ac + "\x20min\x20" + _0xd37925 + "\x20s";
   },
   countDownMinute = () => {
     if (stopminute > 0x0) stopminute--;
@@ -139,19 +96,68 @@ const displayTimeMinute = () => {
     displayTimeMinute();
   };
 (intervalMinute = setInterval(countDownMinute, 0x3e8)), displayTimeMinute();
+function _0x5e30() {
+  const _0x478b9b = [
+    "1796785muPqyy",
+    "innerHTML",
+    "white",
+    "764407NJMGLZ",
+    "213607FWOqLv",
+    "red",
+    "3706722zHMpCE",
+    "stopleft",
+    "end",
+    "6qFSDIv",
+    "none",
+    "rtimehour",
+    "search",
+    "color",
+    "Space",
+    "flex",
+    "10930425VeKGTo",
+    "stoptimer",
+    "56RlsVNm",
+    "time",
+    "1429580oiKtCS",
+    "get",
+    "getElementById",
+    "stopminute",
+    "rtimeminute",
+    "6198wFPNjC",
+    "display",
+    "1340jrPpOF",
+    "finish",
+    "log",
+    "box",
+    "\x20h\x20",
+    "timestop",
+    "preventDefault",
+    "textContent",
+    "style",
+    "addEventListener",
+    "location",
+    "9XAezhw",
+    "keydown",
+    "numberstop",
+  ];
+  _0x5e30 = function () {
+    return _0x478b9b;
+  };
+  return _0x5e30();
+}
 function blinkstoptimer() {
-  const _0x1d883e = _0x24a121;
-  let _0x1280bf = document["getElementById"](_0x1d883e(0x16e));
-  _0x1280bf &&
-    ((_0x1280bf["style"][_0x1d883e(0x15f)] = _0x1d883e(0x167)),
+  const _0x51fd7c = _0x4ee6be;
+  let _0x197ff8 = document[_0x51fd7c(0x94)](_0x51fd7c(0x8f));
+  _0x197ff8 &&
+    ((_0x197ff8[_0x51fd7c(0xa1)]["color"] = _0x51fd7c(0x83)),
     setTimeout(() => {
-      const _0x5f0c0d = _0x1d883e;
-      _0x1280bf[_0x5f0c0d(0x155)]["color"] = "white";
+      const _0x152571 = _0x51fd7c;
+      _0x197ff8["style"][_0x152571(0x8b)] = _0x152571(0x80);
     }, 0x1f4));
 }
 function checkConditions() {
-  const _0x98232b = _0x24a121;
-  let _0x51dbbb = document[_0x98232b(0x170)]("box");
+  const _0x43accc = _0x4ee6be;
+  let _0x31986e = document[_0x43accc(0x94)]("box");
   if (
     rtimehour === 0x0 &&
     rtimeminute === 0x0 &&
@@ -159,18 +165,19 @@ function checkConditions() {
     stopleft <= 0x0 &&
     stopminute === 0x0
   ) {
-    (_0x51dbbb["style"][_0x98232b(0x162)] = _0x98232b(0x158)),
+    (end = !![]),
+      (_0x31986e[_0x43accc(0xa1)][_0x43accc(0x98)] = "none"),
       clearInterval(loopInterval),
       clearInterval(blinkInterval),
       (blinkInterval = null),
-      (document[_0x98232b(0x170)](_0x98232b(0x16e))[_0x98232b(0x155)][
-        _0x98232b(0x15f)
-      ] = _0x98232b(0x152));
+      (document[_0x43accc(0x94)](_0x43accc(0x8f))[_0x43accc(0xa1)]["color"] =
+        "white"),
+      console[_0x43accc(0x9b)](_0x43accc(0x86));
     return;
   }
   timestop === 0x0 &&
     stopminute === 0x0 &&
-    ((_0x51dbbb["style"][_0x98232b(0x162)] = _0x98232b(0x15d)),
+    ((_0x31986e[_0x43accc(0xa1)][_0x43accc(0x98)] = _0x43accc(0x8d)),
     (boxVisible = !![]),
     clearInterval(intervalMinute)),
     timestop === 0x0 &&
@@ -178,33 +185,43 @@ function checkConditions() {
       !blinkInterval &&
       (blinkInterval = setInterval(blinkstoptimer, 0x4b0));
 }
-document["addEventListener"]("keydown", function (_0x504d61) {
-  const _0x3681cc = _0x24a121;
-  if (_0x504d61["code"] === _0x3681cc(0x168) && boxVisible) {
-    _0x504d61["preventDefault"](),
-      (intervalMinute = setInterval(countDownMinute, 0x3e8));
-    stopleft > 0x0 && stopleft--;
-    document[_0x3681cc(0x170)]("stopleft")[_0x3681cc(0x16a)] = stopleft;
-    if (stopleft === 0x0) {
-      clearInterval(intervalMinute);
-      return;
+document[_0x4ee6be(0xa2)](_0x4ee6be(0xa5), function (_0x5e5e4b) {
+  const _0x1d19bb = _0x4ee6be;
+  if (_0x5e5e4b["code"] === _0x1d19bb(0x8c)) {
+    _0x5e5e4b[_0x1d19bb(0x9f)]();
+    let _0x4c211a = document[_0x1d19bb(0x94)](_0x1d19bb(0x9a));
+    _0x4c211a &&
+      _0x4c211a[_0x1d19bb(0xa1)][_0x1d19bb(0x98)] === _0x1d19bb(0x8d) &&
+      (_0x4c211a["style"]["display"] = _0x1d19bb(0x88));
+    if (
+      boxVisible ||
+      (_0x4c211a &&
+        _0x4c211a[_0x1d19bb(0xa1)][_0x1d19bb(0x98)] === _0x1d19bb(0x88))
+    ) {
+      intervalMinute = setInterval(countDownMinute, 0x3e8);
+      stopleft > 0x0 && stopleft--;
+      document[_0x1d19bb(0x94)](_0x1d19bb(0x85))["innerHTML"] = stopleft;
+      if (stopleft === 0x0) {
+        clearInterval(intervalMinute);
+        return;
+      }
+      let _0x1d0dd8 = document[_0x1d19bb(0x94)](_0x1d19bb(0x9c));
+      _0x1d0dd8 &&
+        ((_0x1d0dd8[_0x1d19bb(0xa1)]["display"] = _0x1d19bb(0x88)),
+        (boxVisible = ![])),
+        blinkInterval &&
+          (clearInterval(blinkInterval),
+          (blinkInterval = null),
+          (document[_0x1d19bb(0x94)]("stoptimer")[_0x1d19bb(0xa1)][
+            _0x1d19bb(0x8b)
+          ] = _0x1d19bb(0x80))),
+        clearInterval(intervalMinute),
+        (timestop = starttimestop),
+        (stopminute = startstopminute),
+        displayTimeMinute(),
+        console[_0x1d19bb(0x9b)](stopleft + ";" + timestop + ";" + stopminute),
+        (intervalMinute = setInterval(countDownMinute, 0x3e8));
     }
-    let _0xb38296 = document[_0x3681cc(0x170)](_0x3681cc(0x153));
-    _0xb38296 &&
-      ((_0xb38296[_0x3681cc(0x155)][_0x3681cc(0x162)] = "none"),
-      (boxVisible = ![])),
-      blinkInterval &&
-        (clearInterval(blinkInterval),
-        (blinkInterval = null),
-        (document["getElementById"](_0x3681cc(0x16e))["style"][
-          _0x3681cc(0x15f)
-        ] = _0x3681cc(0x152))),
-      clearInterval(intervalMinute),
-      (timestop = starttimestop),
-      (stopminute = startstopminute),
-      displayTimeMinute(),
-      console[_0x3681cc(0x161)](stopleft + ";" + timestop + ";" + stopminute),
-      (intervalMinute = setInterval(countDownMinute, 0x3e8));
   }
 });
 let loopInterval = setInterval(checkConditions, 0x1f4);
